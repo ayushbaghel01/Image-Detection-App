@@ -1,0 +1,27 @@
+*{padding: 0.2rem; margin: -0.25rem; box-sizing: border-box;}
+header {
+	text-align: center;
+    color: black;
+    padding: 1.2rem;
+	position: relative;
+}
+h1 {
+	padding:2rem;
+	margin-bottom: 0.9rem;
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #333;
+    background: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+	font-family: 'Rouge Script', cursive;
+	font-size: 3rem;
+
+}
+
+h3 {
+	position: relative;
+	margin: 0.7rem;
+	color: black;
+	text-shadow: 0.5px 0.5px 0.5px pink;
+    font-family: 'Rouge Script', cursive;
+	font-size: 1.2rem;	
+}

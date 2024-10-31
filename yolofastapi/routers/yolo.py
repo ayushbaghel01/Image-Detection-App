@@ -1,5 +1,5 @@
 from fastapi import APIRouter, UploadFile, Response, status, HTTPException
-from detectors import yolov3
+from detectors import Yolov8
 import cv2
 from schemas.yolo import ImageAnalysisResponse
 
@@ -20,7 +20,7 @@ images = []
 async def yolo_image_upload(file: UploadFile) ->ImageAnalysisResponse:
 
     contents = await file.read()
-    dt = yolov3.Yolov3(chunked=contents)
+    dt = Yolov8.Yolov8(chunked=contents)
     frame, labels = await dt()
     success, encoded_image = cv2.imencode(".png",frame)
     images.append(encoded_image)

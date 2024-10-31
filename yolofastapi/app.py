@@ -18,7 +18,7 @@ app.add_middleware(
 app.include_router(yolo.router)
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Default to port 80 if not set
+    port = int(os.environ.get("PORT", 5000))  # Default to port 5000 if not set
     config = Config(app, host="127.0.0.1", port=port, lifespan="on")
     server = Server(config)
     server.run()

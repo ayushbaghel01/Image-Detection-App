@@ -1,0 +1,88 @@
+.ResultsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 40%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ResultsContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.9rem;
+}
+
+.JSONText {
+    flex: 1;
+    position: relative;
+    width:100%;
+    height: auto;
+    padding: 10px;
+    background-color: #eef;
+    border-radius: 0.5rem;
+    color: #555;
+    margin-bottom: 0.2rem;
+}
+
+.ResultsImage {
+    flex: 1;
+    max-width: 60%; 
+    max-height: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.DownloadButton {
+    background-color: #9f05ff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: -0.5rem;
+    margin-left: 10rem;
+
+}
+
+.DownloadButton:hover {
+    background-color: #fd5e08;
+    transform: scale(1.05);
+}
+
+.DownloadButton:disabled {
+    background-color: #ccc;
+    cursor: scale(1.05);
+}
+
+.JSONDownloadLink {
+    display: inline-block; 
+    margin-top: 10px;
+    padding: 0.5rem 1rem; 
+    background-color: #9f05ff;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.JSONDownloadLink:hover {
+    background-color: #fd5e08;
+    transform: scale(1.05);
+}
+
+h2 {
+    padding-bottom: 2rem;
+    font-family: 'Rouge Script', cursive;
+    color: black;
+    text-shadow: 1px 1px 1px pink;
+}
